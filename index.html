@@ -1,0 +1,18 @@
+<!--
+	simple form with a url input and a submit button. on submit, a get request is made to /listing"
+	the url is sent as a parameter to the get request.
+-->
+<html>
+<head>
+	<title>Add a Listing here!  </title>
+</head>
+<body>
+	<h1>View the listings <a href="https://docs.google.com/spreadsheets/d/1cQoVDhiLhEBcj8VsbFrcrmV6-dcLEPdCqm50BL5cYV0/edit?usp=sharing">here</a></h1>
+	<h2>Make sure to use the full url, including the https://...</h3>
+	<h2>You can view listings on craigslist <a href="https://vancouver.craigslist.org/search/apa" target="_blank">here</a></h2>
+	<form action="/listing" method="get">
+		<input type="text" name="url" placeholder="URL">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
